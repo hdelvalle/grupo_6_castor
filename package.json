@@ -1,0 +1,23 @@
+{
+  "name": "grupo_6_undefined",
+  "version": "1.0.0",
+  "description": "1- Páginas web de referencia:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hdelvalle/grupo_6_undefined.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hdelvalle/grupo_6_undefined/issues"
+  },
+  "homepage": "https://github.com/hdelvalle/grupo_6_undefined#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
