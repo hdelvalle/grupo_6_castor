@@ -14,14 +14,14 @@
 html {
     font-family: var(--fuente-principal);
 }
-body{
+
+body {
     margin: 0 auto;
 }
 
 header {
     background-color: var(--paleta-d);
     width: 100%;
-    height: 150px;
     display: flex;
 }
 
@@ -41,7 +41,7 @@ header .contenedor-nav-search {
     width: 80%;
 }
 
-section{
+section {
     margin: 0 0 2rem 0;
 }
 
@@ -113,7 +113,7 @@ header section {
     align-items: center;
 }
 
-body .contenedor-carruselImg{
+body .contenedor-carruselImg {
     width: 95vw;
     margin: var(--separador-elementos) auto;
     border: 1px solid var(--paleta-c);
@@ -122,22 +122,22 @@ body .contenedor-carruselImg{
     align-items: center;
 }
 
-.contenedor-carruselImg img{
+.contenedor-carruselImg img {
     width: 100%;
     height: 100%;
 }
 
-body .contenedor-prodDestacado{
-    margin: var(--separador-elementos) auto; 
+body .contenedor-prodDestacado {
+    margin: var(--separador-elementos) auto;
     width: 98%;
     height: 20rem;
 }
 
-.contenedor-prodDestacado h3{
+.contenedor-prodDestacado h3 {
     padding: .5rem;
 }
 
-body .contenedor-articulo-prodDestacado{
+body .contenedor-articulo-prodDestacado {
     width: 99%;
     height: 80%;
     display: flex;
@@ -145,13 +145,13 @@ body .contenedor-articulo-prodDestacado{
     margin: 1rem .5rem;
 }
 
-.contenedor-articulo-prodDestacado article{
+.contenedor-articulo-prodDestacado article {
     width: 100%;
     height: 100%;
     border: 1px solid var(--paleta-c);
 }
 
-.contenedor-marcas{
+.contenedor-marcas {
     width: 95%;
     height: 15rem;
     margin: var(--separador-elementos) auto;
@@ -161,15 +161,51 @@ body .contenedor-articulo-prodDestacado{
     border: 1px solid var(--paleta-b);
 }
 
-.contenedor-marcas article{
+.contenedor-marcas article {
     border: 1px solid var(--paleta-a);
     width: 5rem;
     height: 5rem;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.contenedor-marcas article span{
-    position: absolute;
-    top: 50%;
-    right: 50%;
+body .contenedor-novedades {
+    width: 98vw;
+    height: 30rem;
+    padding: 2rem;
+    margin: 0 auto;
+    border: 1px solid var(--paleta-a);
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-novedades .contenedor-p-novedades {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedor-novedades .contenedor-btn-novedades {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    background-color: transparent;
+}
+
+.contenedor-novedades .contenedor-btn-novedades button {
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+.contenedor-articulo-prodDestacado article{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
