@@ -1,5 +1,22 @@
-*{
+:root {
+    /* El root se utiliza para declarar variables dentro del Css */
+    --paleta-a: #ff5400;
+    --paleta-b: #252422;
+    --paleta-c: #403d39;
+    --paleta-d: #ccc5b9;
+    --paleta-e: #fffcf2;
+    --fuente-principal: 'Comfortaa', cursive;
+    /* Las variables usualmente se declaran de esta manera('--'+nombre de variable) y los espacios se remplazan por '-'*/ 
+}
+
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-   }
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem == 10px */
+    background-color: var(--paleta-e);
+}

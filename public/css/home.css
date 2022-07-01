@@ -1,0 +1,175 @@
+:root {
+    /* El root se utiliza para declarar variables dentro del Css */
+    --paleta-a: #ff5400;
+    --paleta-b: #252422;
+    --paleta-c: #403d39;
+    --paleta-d: #ccc5b9;
+    --paleta-e: #fffcf2;
+    --fuente-principal: 'Comfortaa', cursive;
+    --curva-de-bordeado: 1.5rem;
+    --separador-elementos: 1rem;
+    /* Las variables usualmente se declaran de esta manera('--'+nombre de variable) y los espacios se remplazan por '-'*/
+}
+
+html {
+    font-family: var(--fuente-principal);
+}
+body{
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--paleta-d);
+    width: 100%;
+    height: 150px;
+    display: flex;
+}
+
+header section {
+    margin: .5rem;
+}
+
+header .logo-castor {
+    content: "LOGO";
+    font-weight: 500;
+    width: 20%;
+}
+
+header .contenedor-nav-search {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+section{
+    margin: 0 0 2rem 0;
+}
+
+section .cont-search-account {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+}
+
+.contenedor-nav-search section button,
+#search {
+    padding: 5px;
+    cursor: pointer;
+}
+
+section .cont-account button {
+    background-color: var(--paleta-a);
+    border: var(--paleta-c);
+    border-radius: var(--curva-de-bordeado);
+    transition: all 1s;
+}
+
+.contenedor-nav-search section button:hover {
+    background-color: var(--paleta-d);
+    color: var(--paleta-a);
+
+}
+
+section .cont-search {
+    width: 70%;
+    background-color: transparent;
+}
+
+section .cont-account {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+}
+
+.cont-search #search {
+    width: 80%;
+    background-color: transparent;
+    border: 1.5px inset var(--paleta-e);
+    border-radius: var(--curva-de-bordeado) 0 0 var(--curva-de-bordeado);
+}
+
+.cont-search .btn {
+    border-radius: 0 var(--curva-de-bordeado) var(--curva-de-bordeado) 0;
+    border: var(--paleta-c);
+    background-color: var(--paleta-a);
+    transition: all .5s;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+header section {
+    display: flex;
+    align-items: center;
+}
+
+body .contenedor-carruselImg{
+    width: 95vw;
+    margin: var(--separador-elementos) auto;
+    border: 1px solid var(--paleta-c);
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-carruselImg img{
+    width: 100%;
+    height: 100%;
+}
+
+body .contenedor-prodDestacado{
+    margin: var(--separador-elementos) auto; 
+    width: 98%;
+    height: 20rem;
+}
+
+.contenedor-prodDestacado h3{
+    padding: .5rem;
+}
+
+body .contenedor-articulo-prodDestacado{
+    width: 99%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem .5rem;
+}
+
+.contenedor-articulo-prodDestacado article{
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--paleta-c);
+}
+
+.contenedor-marcas{
+    width: 95%;
+    height: 15rem;
+    margin: var(--separador-elementos) auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid var(--paleta-b);
+}
+
+.contenedor-marcas article{
+    border: 1px solid var(--paleta-a);
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+}
+
+.contenedor-marcas article span{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}
