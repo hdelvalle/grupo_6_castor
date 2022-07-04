@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,127 @@
     <title>Castor</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,100;1,200;1,400&family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,100;1,200;1,400&family=Rubik:wght@300;400&display=swap"
+        rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/loginstyles.css">
+    <link rel="stylesheet" href="/css/home.css">
 </head>
 
-<header>
-
-</header>
-
 <body>
-    <h1>Hola soy la página de login</h1>
+
+<header>
+    <div class="logo-castor">
+
+    </div>
+    <div class="contenedor-nav-search">
+        <section class="cont-search-account">
+            <form class="cont-search" action="">
+                <input type="text" name="search" id="search" placeholder="Busque sus Materiales aqui!">
+                <button class="btn">BUSCAR</button>
+            </form>
+            <div class="cont-account">
+                <button class="btn btn-account">Mi Cuenta</button>
+                <button class="btn btn-register">Registrar</button>
+            </div>
+        </section>
+        <nav class="barnav">
+            <ul class="nav-list">
+                <li><a class="link-nav">Categorias</a></li>
+                <li><a class="link-nav">Contactanos!</a></li>
+                <li><a class="link-nav">Carrito de Compras</a></li> 
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="imagenContenedora"
+        style="background-image: url(https://apliqa.es/wp-content/uploads/2022/03/TYDKSTNAORGC3AE2AJFLLZEE3Y.jpg)">
+        <!--fondo-->
+        <br>
+        <p class="tituloPrincipal">INICIO DE CUENTA</p>
+        <br>
+        <div class="card"><br>
+            <h3 class="clienteRegistrado"> Cliente registado </h3>
+            <div class="formularioLogin">
+                <label for="email-login">Email</label>
+                <br>
+                <input type="email" name="email" id="email-login">
+                <br>
+                <br>
+                <label for="password-login">Constraseña</label>
+                <br>
+                <input type="password" name="password" id="password-login">
+            </div>
+            <div class="footerCard">
+                <label><input type="checkbox" id="cbox1" value="first_checkbox"> RECORDAR</label>
+                <button class="botoncito" type="submit">Iniciar Sesión</button>
+            </div>
+        </div>
+
+        <div class="clienteNuevo">
+            <p>¿CLIENTE NUEVO?</p>
+        </div>
+
+        <div class="footerImg">
+            <p>Crear una cuenta tiene muchos beneficios:<br>
+                Pago más rápido, guardar más de una dirección,<br>
+                 seguimiento de pedidos y mucho más.
+            </p>
+            <button type="button" name="RCN">REGISTRAR CLIENTE NUEVO</button>
+        </div>
+    </div>
+    
+
+</main>
+
+<footer class="contenedor-footer">
+    <section class="contenedor-links-footer">
+        <h4><a href="#">Tienda Online</a></h4>
+        <ul>    
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+            <li><a href="#">Registrate</a></li>
+            <li><a href="#">Olvidaste tu Contraseña?</a></li>
+            <li><a href="#">Defensa al Consumidor</a></li>
+        </ul>
+    </section>
+    <section class="contenedor-links-footer">
+        <h4><a href="#">Castor|Nosotros</a></h4>
+        <ul>
+            <li><a href="#">Nuestros Locales</a></li>
+            <li><a href="#">Venta a Empresas</a></li>
+            <li><a href="#">Trabaja con Nosotros</a></li>
+            <li><a href="#">Terminos y Condiciones</a></li>
+            <li><a href="#">Nuestra Historia</a></li>
+        </ul>
+    </section>
+    <section class="contenedor-links-footer">
+        <h4><a href="#">Servicios</a></h4>
+        <ul>
+            <li><a href="#">Cursos Gratuitos</a></li>
+            <li><a href="#">Garantia de precios</a></li>
+            <li><a href="#">Garantia de Devolucion</a></li>
+            <li><a href="#">Medios de Pago</a></li>
+            <li><a href="#">Promociones</a></li>
+        </ul>
+    </section>
+    <section class="contenedor-suscripcion-footer">
+        <h4>SUSCRIBITE A NUESTRA LISTA</h4>
+        <p>Unite a nuestra lista de correo y descubri descuentos para tus Compras</p>
+        <form action="/" class="form-suscripcion">
+            <input type="text" name="suscripcion" id="suscripcion" placeholder="Ingrese su correo...">
+            <input type="submit" name="submit-suscripciones" id="submit-suscripciones" value="SUSCRIBIRME">
+        </form>
+        
+    </section>
+</footer>
+
 </body>
 
-<footer>
-    
-</footer>
+
 
 </html>
