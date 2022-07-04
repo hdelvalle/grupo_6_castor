@@ -28,6 +28,7 @@ header{
     background-color: var(--paleta-d);
     border-radius: 20px;
     box-shadow: 0 0 20px 2px var(--paleta-d);
+    background-size: auto;
 }
 
 .linea {
@@ -51,12 +52,14 @@ header{
   }
   div.clienteNuevo p{
       margin: auto;
-      margin-top: 40px;
       margin-bottom: 20px;
+      padding: 10px;
+      background-color: var(--paleta-d);
     }
     .footerImg {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 20px;
     }
     .formularioLogin{
         margin-top: 5vh;
@@ -72,8 +75,19 @@ header{
     margin-left: 2vw;
     margin-right: 2vw;
     flex-wrap: wrap;
+    
 }
+.buttonRegistarClienteNuevo button{
+    padding: 2vh 2vw;
+    border-radius: 10px;
+    color: var(--paleta-e);
+    background-color: var(--paleta-a);
 
+}
+.footerImagenContenedora{
+    background-color: var(--paleta-d);
+    margin-top: 40px;
+}
 
 
 
