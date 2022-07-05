@@ -26,6 +26,7 @@ h1 {
     text-align: center;
     margin-top: 4rem;
 }
+
 .form-registro {
     display: flex;
     flex-wrap: wrap;
@@ -34,6 +35,7 @@ h1 {
     padding-bottom: 5rem;
 
 }
+
 .contenedor-bloque {
     display: flex;
     flex-wrap: wrap;
@@ -41,6 +43,7 @@ h1 {
     margin-top: 2rem;
     justify-content: center;
 }
+
 label,
 input {
     display: flex;
@@ -53,8 +56,8 @@ input {
 /*Para que no se vean las flechitas a la derecha del input de número */
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
--webkit-appearance: none;
-margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 
@@ -74,7 +77,8 @@ input {
     width: 100%;
     max-width: 40rem;
 }
-.contenedor-bloque li{
+
+.contenedor-bloque li {
     list-style: none;
     margin-left: 0.5rem;
 }
@@ -86,16 +90,19 @@ input {
     max-width: 40rem;
     align-items: baseline;
 
-} 
+}
+
 .check-acepta {
     width: 2rem;
 }
-.politica-privacidad label{
+
+.politica-privacidad label {
     font-size: 1.2rem;
     color: var(--paleta-a);
     justify-content: flex-start;
     margin-left: .5rem;
-} 
+}
+
 .boton-registro {
     border: none;
     border-radius: .5rem;
@@ -111,6 +118,7 @@ input {
     transition-property: all;
     transition: .3s;
 }
+
 .boton-registro:hover {
     background-color: var(--paleta-c);
     color: var(--paleta-e);
@@ -124,23 +132,22 @@ input {
 
 /** Dispositivo tablet **/
 
-@media (min-width: 480px) {
-
-}
+@media (min-width: 480px) {}
 
 /** desktop **/
 @media (min-width: 769px) {
-.form-registro {
-    display: flex;
-    justify-content: space-around;
-    width: 60rem;
-    border: 1px solid #d8d8d8;
-    box-shadow: 1px 2px 2px 0 rgba(255 84 0 / 50%);
-    margin-bottom: 18rem;
-    margin-top: 4rem;
-}
-.contenedor-bloque {
-    width: 40%;
-}
+    .form-registro {
+        display: flex;
+        justify-content: space-around;
+        width: 60rem;
+        border: 1px solid #d8d8d8;
+        box-shadow: 1px 2px 2px 0 rgba(255 84 0 / 50%);
+        margin-bottom: 18rem;
+        margin-top: 4rem;
+    }
+
+    .contenedor-bloque {
+        width: 40%;
+    }
 
 }

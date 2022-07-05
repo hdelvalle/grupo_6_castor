@@ -11,18 +11,106 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/productDetail.css">
 </head>
 
 <header>
+    <div class="logo-castor">
 
+    </div>
+    <div class="contenedor-nav-search">
+        <section class="cont-search-account">
+            <form class="cont-search" action="">
+                <input type="text" name="search" id="search" placeholder="Busque sus Materiales aqui!">
+                <button class="btn">BUSCAR</button>
+            </form>
+            <div class="cont-account">
+                <button class="btn btn-account">Mi Cuenta</button>
+                <button class="btn btn-register">Registrar</button>
+            </div>
+        </section>
+        <nav class="barnav">
+            <ul class="nav-list">
+                <li><a class="link-nav">Categorias</a></li>
+                <li><a class="link-nav">Contactanos!</a></li>
+                <li><a class="link-nav">Carrito de Compras</a></li> 
+            </ul>
+        </nav>
+    </div>
 </header>
 
 <body>
-    <h1>Hola soy la página del detalle de producto</h1>
+    <div class="contenedor-productdetail">
+        <section class="producto">  
+            <section class="foto-nombre">
+                <div class="foto-producto">
+
+                </div>
+                <h4>Nombre de Producto</h4>
+            </section>
+            <section class="cant-disponibilidad">
+                <h3></h3>
+                <div class="codigo-disponibilidad">
+                    <p>Disponibilidad: Stock</p> <p>SKU: ------</p>
+                </div>
+                <h2></h2>
+            </section>
+            <div class="btn">
+                <p>
+                    <button>-</button>
+                    <label for="">0</label>
+                    <button>+</button>
+                </p>
+                <button>AGREGAR</button>
+            </div>
+        </section>
+        <section class="descripcion-producto">
+            <h2></h2>
+            <p></p>
+        </section>
+    </div>
 </body>
 
-<footer>
-    
+<footer class="contenedor-footer">
+        <section class="contenedor-links-footer">
+            <h4 class="titulos-footer"><a href="#">Tienda Online</a></h4>
+            <ul>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#">Registrate</a></li>
+                <li><a href="#">¿Olvidaste tu Contraseña?</a></li>
+                <li><a href="#">Defensa al Consumidor</a></li>
+            </ul>
+        </section>
+        <section class="contenedor-links-footer">
+            <h4 class="titulos-footer"><a href="#">Castor | Nosotros</a></h4>
+            <ul>
+                <li><a href="#">Nuestros Locales</a></li>
+                <li><a href="#">Venta a Empresas</a></li>
+                <li><a href="#">Trabajá con Nosotros</a></li>
+                <li><a href="#">Términos y Condiciones</a></li>
+                <li><a href="#">Nuestra Historia</a></li>
+            </ul>
+        </section>
+        <section class="contenedor-links-footer">
+            <h4 class="titulos-footer"><a href="#">Servicios</a></h4>
+            <ul>
+                <li><a href="#">Cursos Gratuitos</a></li>
+                <li><a href="#">Garantía de precios</a></li>
+                <li><a href="#">Garantía de Devolución</a></li>
+                <li><a href="#">Medios de Pago</a></li>
+                <li><a href="#">Promociones</a></li>
+            </ul>
+        </section>
+        <section class="contenedor-suscripcion-footer">
+            <h4 class="titulos-footer">SUSCRIBITE A NUESTRA LISTA</h4>
+            <p class="frase-footer">Unite a nuestra lista de correo y descubrí descuentos para tus Compras</p>
+            <form action="#" method="post" class="form-suscripcion">
+                <input type="email" name="suscripcion" id="suscripcion" placeholder="Ingresá tu correo..." required="">
+                <button id="boton-suscripciones">Suscribirme</button>
+            </form>
+        </section>
 </footer>
-
 </html>

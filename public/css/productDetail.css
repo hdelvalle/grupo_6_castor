@@ -1,0 +1,18 @@
+:root {
+    /* El root se utiliza para declarar variables dentro del Css */
+    --paleta-a: #ff5400;
+    --paleta-b: #252422;
+    --paleta-c: #403d39;
+    --paleta-d: #ccc5b9;
+    --paleta-e: #fffcf2;
+    --fuente-principal: 'Comfortaa', cursive;
+    --curva-de-bordeado: 1.5rem;
+    --separador-elementos: 1rem;
+    /* Las variables usualmente se declaran de esta manera('--'+nombre de variable) y los espacios se remplazan por '-'*/
+}
+
+body .contenedor-productdetail{
+    height: 75vh;
+    width: 80%;
+    margin: auto auto;
+}
