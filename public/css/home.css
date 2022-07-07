@@ -91,7 +91,7 @@ body .contenedor-articulo-prodDestacado {
 
 .contenedor-marcas {
     width: 95%;
-    height: 15rem;
+    height: 30rem;
     margin: var(--separador-elementos) auto;
     display: flex;
     justify-content: space-around;
@@ -102,8 +102,8 @@ body .contenedor-articulo-prodDestacado {
 .contenedor-marcas article {
     border: 1px solid var(--paleta-a);
     margin:  10px;
-    width: 5rem;
-    height: 5rem;
+    width: 10rem;
+    height: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,7 +170,14 @@ footer{
     }
     .contenedor-articulo-prodDestacado article{
         width: 40%;
-        height: 50%;
+        height: 40%;
+    }
+    .contenedor-marcas article{
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+    .contenedor-marcas{
+        height: 20rem;
     }
 }
 
@@ -184,5 +191,13 @@ footer{
     }
     .contenedor-articulo-prodDestacado article{
         width: 23%;
+        height: 50%;
+    }
+    .contenedor-marcas article{
+        width: 12rem;
+        height: 12rem;
+    }
+    .contenedor-marcas{
+        height: 25rem;
     }
 }
