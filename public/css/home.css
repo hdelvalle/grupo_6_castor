@@ -22,20 +22,30 @@ body {
 body .contenedor-carruselImg {
     width: 95vw;
     margin: var(--separador-elementos) auto;
-    border: 1px solid var(--paleta-c);
     height: 200px;
     overflow: hidden;
-}
+    border-radius: 5px;
+    background: #ccc5b9;
+    box-shadow: inset 10px 10px 0px #7e7a73,
+                inset -10px -10px 0px #ffffff;
+    }
 
 /*CARRUSELL INICIO*/
 .contenedor-carruselImg .tarjeta-foto{
     height: 100%;
     position: relative;
+    
 }
 
 .tarjeta-foto .imagenCarrusel {
     width: 100%;
     height: 100%;
+}
+
+.imagenCarrusel img{
+    width: 100%;
+    height: 100%;
+    
 }
 
 .flechasCarrusel{
@@ -86,7 +96,16 @@ body .contenedor-articulo-prodDestacado {
 .contenedor-articulo-prodDestacado article {
     width: 200px;
     height: 100%;
-    border: 1px solid var(--paleta-c);
+    border-radius: 10px;
+    background: #fffcf2;
+    box-shadow: inset 5px 5px 2px #666561,
+                inset -5px -5px 2px #ffffff;
+}
+
+.contenedor-prodDestacado img{
+    width: 85%;
+    height: 70%;
+
 }
 
 .contenedor-marcas {
