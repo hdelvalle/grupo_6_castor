@@ -27,14 +27,14 @@ body .contenedor-carruselImg {
     border-radius: 5px;
     background: #ccc5b9;
     box-shadow: inset 10px 10px 0px #7e7a73,
-                inset -10px -10px 0px #ffffff;
-    }
+        inset -10px -10px 0px #ffffff;
+}
 
 /*CARRUSELL INICIO*/
-.contenedor-carruselImg .tarjeta-foto{
+.contenedor-carruselImg .tarjeta-foto {
     height: 100%;
     position: relative;
-    
+
 }
 
 .tarjeta-foto .imagenCarrusel {
@@ -42,14 +42,29 @@ body .contenedor-carruselImg {
     height: 100%;
 }
 
-.imagenCarrusel img{
+.imagenCarrusel img {
     width: 100%;
     height: 100%;
-    
 }
 
-.flechasCarrusel{
-    position:absolute;
+#imagenCarrusel1{
+    background-image: url(/images/fotoCarrusel1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#imagenCarrusel2{
+    background-image: url(/images/fotoCarrusel2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#imagenCarrusel3{
+    background-image: url(/images/fotoCarrusel4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flechasCarrusel {
+    position: absolute;
     top: 0%;
     height: 100%;
     width: 100%;
@@ -57,15 +72,17 @@ body .contenedor-carruselImg {
     align-items: center;
     justify-content: space-between;
 }
+
 .flechasCarrusel a {
     background-color: #403d3952;
-    width: 15px;
+    width: 30px;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
 }
+
 /*CARRUSEL FIN*/
 
 body .contenedor-prodDestacado {
@@ -79,7 +96,7 @@ body .contenedor-prodDestacado {
 }
 
 .contenedor-prodDestacado h3 {
-    padding: .5rem; 
+    padding: .5rem;
     text-align: center;
     margin: 15px auto;
 }
@@ -99,10 +116,10 @@ body .contenedor-articulo-prodDestacado {
     border-radius: 10px;
     background: #fffcf2;
     box-shadow: inset 5px 5px 2px #666561,
-                inset -5px -5px 2px #ffffff;
+        inset -5px -5px 2px #ffffff;
 }
 
-.contenedor-prodDestacado img{
+.contenedor-prodDestacado img {
     width: 85%;
     height: 70%;
 
@@ -120,7 +137,7 @@ body .contenedor-articulo-prodDestacado {
 
 .contenedor-marcas article {
     border: 1px solid var(--paleta-a);
-    margin:  10px;
+    margin: 10px;
     width: 10rem;
     height: 10rem;
     display: flex;
@@ -128,7 +145,33 @@ body .contenedor-articulo-prodDestacado {
     align-items: center;
 }
 
+#imagenProdDest1{
+    background-image: url(/images/andamios.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#imagenProdDest2{
+    background-image: url(/images/arenaEmbolsada.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#imagenProdDest3{
+    background-image: url(/images/cemento.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#imagenProdDest4{
+    background-image: url(/images/ladrillos.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
 body .contenedor-novedades {
+    background-image: url(/images/fotoCarrusel3.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 98vw;
     height: 30rem;
     padding: 2rem;
@@ -162,7 +205,7 @@ body .contenedor-novedades {
     cursor: pointer;
 }
 
-.contenedor-articulo-prodDestacado article{
+.contenedor-articulo-prodDestacado article {
     width: 70%;
     height: 200px;
     display: flex;
@@ -170,7 +213,7 @@ body .contenedor-novedades {
     margin: 10px 0;
 }
 
-footer{
+footer {
     margin-top: 5rem;
 }
 
@@ -182,20 +225,24 @@ footer{
         height: 40vh;
         flex-wrap: wrap
     }
-    body .contenedor-prodDestacado{
+
+    body .contenedor-prodDestacado {
         height: max-content;
         display: flex;
 
     }
-    .contenedor-articulo-prodDestacado article{
+
+    .contenedor-articulo-prodDestacado article {
         width: 40%;
         height: 40%;
     }
-    .contenedor-marcas article{
+
+    .contenedor-marcas article {
         width: 7.5rem;
         height: 7.5rem;
     }
-    .contenedor-marcas{
+
+    .contenedor-marcas {
         height: 20rem;
     }
 }
@@ -208,15 +255,18 @@ footer{
         height: 40vh;
         flex-wrap: wrap
     }
-    .contenedor-articulo-prodDestacado article{
+
+    .contenedor-articulo-prodDestacado article {
         width: 23%;
         height: 50%;
     }
-    .contenedor-marcas article{
+
+    .contenedor-marcas article {
         width: 12rem;
         height: 12rem;
     }
-    .contenedor-marcas{
+
+    .contenedor-marcas {
         height: 25rem;
     }
 }
