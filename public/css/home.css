@@ -86,7 +86,7 @@ section .cont-account {
     width: 80%;
     background-color: transparent;
     border: 1.5px inset var(--paleta-e);
-    border-radius: var(--curva-de-bordeado) 0 0 var(--curva-de-bordeado);
+    border-radius: var(--curva-de-bordeado) var(--curva-de-bordeado);
 }
 
 .cont-search .btn {
@@ -94,7 +94,13 @@ section .cont-account {
     border: var(--paleta-c);
     background-color: var(--paleta-a);
     transition: all .5s;
+    margin-left: -50px;
+    height: 24px;
+    width: 50px;
+    border: 0;
+    -webkit-appearance: none;
 }
+
 
 header nav ul {
     list-style: none;

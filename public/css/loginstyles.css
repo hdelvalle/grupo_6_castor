@@ -8,19 +8,27 @@
     --fuente-principal: 'Comfortaa', cursive;
     /* Las variables usualmente se declaran de esta manera('--'+nombre de variable) y los espacios se remplazan por '-'*/ 
 }
+/*HEADER DEL BODY*/
+
 header{
     height: 10vh;
     width: 100%;
     background-color: red;
 }
+/* IMAGEN FONDO DEL MAIN*/
 .imagenContenedora{
     height: 70vh;
     width: 100vw;
     background-size: cover;
 }
+/*TITULO MAIN*/
+
 .tituloPrincipal{
     text-align: center;
+    font-size: 15px;
+
 }
+/*CAJA CONTENEDORA DEL FORM Y DEMAS DIVS */
 .card{
     height: 60%;
     width: 50%;
@@ -29,45 +37,48 @@ header{
     border-radius: 20px;
     box-shadow: 0 0 20px 2px var(--paleta-d);
     background-size: auto;
+    opacity: 80%;
+}
+/*TITULO/PREGUNTA CAJA CONTENEDORA ¿CLIENTE REGISTRADO?*/
+.clienteRegistrado{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 12px;
+}
+/*CAJA CONTENEDORA DE FORMULARIOS*/
+form.formularios{
+    margin-top: 5vh;
+    margin-left: 15px;
+    position: relative;
+
+}
+/* TRANSICIONES*/
+#email-login:hover,#password-login:hover{
+    background-color:var(--paleta-d);
+    color:var(--paleta-b);
+    border-radius: 2.5px;
 }
 
-.linea {
-    border-top: 1px solid black;
-    height: 2px;
-    max-width: 200px;
-    padding: 0;
-    margin: 20px auto 0 auto;
-  }
-  .botoncito{
-    background-color: grey;
-    color: rgb(43, 226, 89);
-    border-radius: 30px;
-    padding: 1% 10%;
-  }
-  #email-login,#password-login{
-    width: 70%;
-  }
-  .clienteNuevo{
-    display: flex;
-  }
-  div.clienteNuevo p{
-      margin: auto;
-      margin-bottom: 20px;
-      padding: 10px;
-      background-color: var(--paleta-d);
-    }
-    .footerImg {
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 20px;
-    }
-    .formularioLogin{
-        margin-top: 5vh;
-        margin-left: 15px;
-    }
-.clienteRegistrado{
-    text-align: center;
+#email-login:focus,#password-login:focus{
+    border: none;
+    outline: none;
+    box-shadow: 0 2px 0 #000;
+    background-color: #fffcf2;
+    
 }
+/*FORMULARIOS*/
+
+#email-login,#password-login{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 70%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    transition: all 0.4s;
+    background: transparent;
+}
+
+/*CAJACONTENEDORADECHECKBOX Y BOTONINICIARSESION*/
 .footerCard{
     display: flex;
     margin-top: 7vh;
@@ -77,16 +88,65 @@ header{
     flex-wrap: wrap;
     
 }
+.footerCard label{
+    align-self: flex-end;
+    margin-bottom: 3%;
+}
+/*LABEL DEL CHECKBOX RECORDAR*/
+#cbox1:hover{
+
+}
+/* transicion de boton iniciar sesion*/
+
+.botoncito:hover{
+    background-color: #ff1e00;
+}
+/*BOTON INICIAR SESION*/
+
+.botoncito{
+    color:var(--paleta-e);
+	background-color:var(--paleta-a);
+    border: 0;
+    color: #fff;
+	padding:10px 20px;
+	text-transform:uppercase;
+	border-radius:5px;
+	cursor:pointer;
+	position:relative;
+    transition: all 0.2s;
+
+/*border-radius: 30px;
+padding: 1% 10%;*/
+}
+/*CAJA CONTENEDORA FOOTERS MAIN*/
+.footerImagenContenedora{
+    background-color: var(--paleta-d);
+    margin-top: 40px;
+}
+/*SUBCAJA CONTENEDORA 1ER FOOTER DEL MAIN (ADENTRO)*/
+.clienteNuevo{
+    display: flex;
+}
+/*TEXTO 1ER FOOTER DEL MAIN*/
+div.clienteNuevo p{
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: var(--paleta-d);
+}
+/*SUBCAJA CONTENEDORA 2DO FOOTER DEL MAIN (ADENTRO)*/
+.footerMain {
+    display: flex;
+justify-content: space-around;
+padding-bottom: 20px;
+}
+/*BOTON 2DO FOOTERMAIN*/
 .buttonRegistarClienteNuevo button{
     padding: 2vh 2vw;
     border-radius: 10px;
     color: var(--paleta-e);
     background-color: var(--paleta-a);
 
-}
-.footerImagenContenedora{
-    background-color: var(--paleta-d);
-    margin-top: 40px;
 }
 
 
