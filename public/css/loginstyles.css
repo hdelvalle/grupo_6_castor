@@ -94,7 +94,7 @@ form.formularios{
 }
 /*LABEL DEL CHECKBOX RECORDAR*/
 #cbox1:hover{
-
+color: #000;
 }
 /* transicion de boton iniciar sesion*/
 
@@ -147,7 +147,7 @@ padding-bottom: 20px;
     color: var(--paleta-e);
     background-color: var(--paleta-a);
 
-}
+} 
 
 
 

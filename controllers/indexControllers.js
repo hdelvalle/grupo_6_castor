@@ -1,9 +1,7 @@
-const express = require('express');
-
 
 const mainControllers = {
     index: (req, res)=>{
-        res.sendFile(path.join(__dirname , '../views/index.html'))
+        res.render('index')
     },
     login: (req, res)=>{
         res.sendFile(path.join(__dirname , '../views/login.html'))
@@ -16,7 +14,7 @@ const mainControllers = {
     },
     register: (req, res)=>{
         res.sendFile(path.join(__dirname , '../views/register.html'))
-    }   
+    }  
     
 }
 
