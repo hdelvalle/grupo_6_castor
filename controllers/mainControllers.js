@@ -1,10 +1,9 @@
 const express = require('express');
-const app = express();
 
 
 const mainControllers = {
-    home: (req, res)=>{
-        res.sendFile(path.join(__dirname , '../views/home.html'))
+    index: (req, res)=>{
+        res.sendFile(path.join(__dirname , '../views/index.html'))
     },
     login: (req, res)=>{
         res.sendFile(path.join(__dirname , '../views/login.html'))
