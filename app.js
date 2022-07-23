@@ -11,8 +11,9 @@ app.use(express.static(publicPath));
 
 
 app.use('/', mainRoutes);
-app.use('/login', usersRoutes);
-app.use('/productCart', productsRoutes);
+app.use('/', usersRoutes);
+
+app.use('/', productsRoutes);
 
 
 app.listen(3030, () => {
