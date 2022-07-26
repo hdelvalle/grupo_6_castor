@@ -14,8 +14,15 @@ const usersRoutes = require('./routes/usersRoutes');
 const productsRoutes = require('./routes/productsRoutes');
 
 app.use('/', mainRoutes);
+<<<<<<< HEAD
 app.use('/login', usersRoutes);
 app.use('/', productsRoutes);
+=======
+app.use('/', usersRoutes);
+
+app.use('/', productsRoutes);
+
+>>>>>>> 3710d560c76980187f0a897b9cb0b27a8ac2d681
 
 // Servidor
 app.listen(3030, () => {

@@ -22,7 +22,15 @@ const productos = [
 
 const controlador = {
     vistaIndex: (req,res) => {
+<<<<<<< HEAD
         res.render('index', {productos: productos});
+=======
+        res.render('./products/productCart', {productos});
+    },
+    detalleMenu: (req, res) => {
+        let idProducto = req.params.id;
+        res.render('./products/productDetail', {producto: productos[idProducto]});
+>>>>>>> 3710d560c76980187f0a897b9cb0b27a8ac2d681
     }
     // detalleMenu: (req, res) => {
     //     let idPlato = req.params.id;
