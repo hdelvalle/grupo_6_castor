@@ -1,28 +1,33 @@
-
 const productos = [
     {
-    nombre:'Carpaccio fresco',
-    precio:'U$S 65.50',
-    descripcion:'Entrada Carpaccio de salmón con cítricos',
-    nombreImagen: 'Carpaccio-de-salmon.jpg',
+    nombre:'Andamios',
+    precio:'AR$ 800',
+    descripcion:'1/4mt',
+    nombreImagen: 'andamios.webp',
     },
     {
-    nombre: 'Risotto de berenjena',
-    precio: 'U$S 47.00',
-    descripcion: 'Risotto de berenjena y queso de cabra',
-    nombreImagen: 'Risotto-berenjena-queso-cabra.jpg',
-    }
-    ]
+    nombre:'Ladrillos',
+    precio:'AR$ 500',
+    descripcion:'100u.',
+    nombreImagen: 'ladrillos.webp',
+    },
+    {
+    nombre:'Arena',
+    precio:'AR$ 1000',
+    descripcion:'mt^3',
+    nombreImagen: 'arenaEmbolsada.webp',
+    },
+]
 
 
 const controlador = {
     vistaIndex: (req,res) => {
-        res.render('productsCart', {platos});
-    },
-    detalleMenu: (req, res) => {
-        let idPlato = req.params.id;
-        res.render('detalleMenu', {plato: platos[idPlato]});
+        res.render('index', {productos: productos});
     }
+    // detalleMenu: (req, res) => {
+    //     let idPlato = req.params.id;
+    //     res.render('detalleMenu', {plato: platos[idPlato]});
+    // }
 }
 
 module.exports = controlador;
