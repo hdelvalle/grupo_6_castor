@@ -35,9 +35,9 @@
     <section class="contenedor-prodDestacado">
         <h3>Productos Destacados</h3>
         <div class="contenedor-articulo-prodDestacado">
-            <% productos.forEach( (producto)=>{ %>
+            <% products.forEach( (producto)=>{ %>
                 <article class="contenido-prodDestacado">
-                    <img src="/images/<%= producto.nombreImagen %>" alt="<%= producto.nombreImagen %>">
+                    <img src="/images/products/<%= producto.nombreImagen %>" alt="<%= producto.nombreImagen %>">
                     <div class="contenido-decripcion-prodDestacado">
                         <p><%= producto.nombre %></p>
                         <p><%= producto.precio %></p>

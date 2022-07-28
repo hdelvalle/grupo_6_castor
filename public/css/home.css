@@ -199,6 +199,8 @@ body .contenedor-novedades {
     display: flex;
     flex-direction: column;
     margin: 10px 0;
+    border: 1 solid rgb(179, 175, 162);
+
 }
 .contenedor-articulo-prodDestacado article:hover{
     height: 45%;
