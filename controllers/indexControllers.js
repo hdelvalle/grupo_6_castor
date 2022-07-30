@@ -20,8 +20,15 @@ const mainControllers = {
     },
     // register: (req, res)=>{
     //     res.sendFile(path.join(__dirname , '../views/register.html'))
-    // }  
-    
+    // }
+    search: (req, res) => {
+     const search = req.query.keywords.toLowerCase();
+     const productsFilter = products.filter((elemento) => {
+        return elemento.nombre.toLowerCase().includes(search);
+    })
+    console.log( productsFilter );
+    res.render('results', { productsFilter, search });
+    }
 }
 
 module.exports = mainControllers;
