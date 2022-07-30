@@ -12,8 +12,8 @@ const mainControllers = {
     // login: (req, res)=>{
     //     res.sendFile(path.join(__dirname , '../views/login.html'))
     // },
-    productCart: (req, res)=>{
-        res.sendFile(path.join(__dirname , '../views/productCart.html'))
+    productCart: (req, res) => {
+        res.sendFile(path.join(__dirname, '../views/productCart.html'))
     },
     productDetail: (req, res) => {
         res.sendFile(path.join(__dirname, '../views/productDetail.html'))
@@ -22,12 +22,18 @@ const mainControllers = {
     //     res.sendFile(path.join(__dirname , '../views/register.html'))
     // }
     search: (req, res) => {
-     const search = req.query.keywords.toLowerCase();
-     const productsFilter = products.filter((elemento) => {
-        return elemento.nombre.toLowerCase().includes(search);
-    })
-    console.log( productsFilter );
-    res.render('results', { productsFilter, search });
+        let search = req.query.keywords.toLowerCase();
+        const productsFilter = products.filter((elemento) => {
+            return elemento.nombre.toLowerCase().includes(search);
+        })
+        console.log(productsFilter);
+        if(productsFilter.length == 0){
+            search = "No hay resultado en busqueda"
+        }
+
+        res.render('products/results', { productsFilter, search });
+
+
     }
 }
 

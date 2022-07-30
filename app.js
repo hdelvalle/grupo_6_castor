@@ -3,10 +3,12 @@ const path = require('path');
 const app = express();
 const publicPath = path.resolve(__dirname, './public');
 
+
 // Configuracion
 app.set('view engine', 'ejs');
 app.use(express.static(publicPath));
 app.use(express.urlencoded({extended: false}));
+app.use(express.json());
 
 // Rutas
 const mainRoutes = require('./routes/indexRoutes');
